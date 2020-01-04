@@ -1,1 +1,5 @@
-<p>Hello World!</p>
+<%= @ivents.each do |ivent| %>
+<p><%= ivent.ivent_name %></p>
+<p><%= ivent.start_day %>"~"<%= ivent.end_day %></p>
+<p><%= ivent.text %></p>
+<% end %>
