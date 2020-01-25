@@ -1,3 +1,9 @@
+.body {
+color: #dccb18;
+text-align: center;
+font-weight:bold;
+}
+
 .header {
 height:15vh;
 background-color: #dccb18;
@@ -8,6 +14,43 @@ font-weight:bold;
 color:#203744;
 line-height:15vh;
   
+}
+.ivent-box{
+  width:90vw;
+  height:50vh;
+  display:flex;
+  color: #a69425;
+  border: #f2f2b0;
+  padding-left: 80px;
+  padding-bottom:10px;
+}
+.ivent-image{
+  width:20vw;
+  height:50vh;
+  border-color: #f2f2b0;
+  border:solid;
+  border-radius:7px;
+}
+.ivent-outline{
+  width:60vw;
+  height:50vh;
+  display:table-cell;
+  border-color: #f2f2b0;
+  border:solid;
+  border-radius:7px;
+  margin-left: 10px
+}
+.more{
+  text-align: center;
+}
+
+.ivents_new{
+  text-align: center;
+  color:#b4cf34;
+}
+.input_list{
+  border:solid;
+  border-color:#b4cf34; 
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
