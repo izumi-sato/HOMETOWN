@@ -9,16 +9,20 @@
 <%= ivent.image %>
 </div>
 <div class="ivent-outline">
-<p>　タイトル：<%= ivent.ivent_name %></p>
-<p>　日　時　：<%= ivent.start_day %>~<%= ivent.end_day %></p>
-<p>　場　所　：<%= ivent.place %></p>
-<p>　概　要　：<%= ivent.text %></p>
-<p class="more">詳しく見る</p>
+<p> タイトル：<%= ivent.ivent_name %></p>
+<p> 日　時　：<%= ivent.start_day %>~<%= ivent.end_day %></p>
+<p> 場　所　：<%= ivent.place %></p>
+<p> リンク先 :<%= ivent.url %></p>
+<p class="more">
+   <li>
+   <%= link_to '詳しく見る', "/ivents/#{ivent.id}", method: :get %>
+  </li></p>
 </div>
 
 </div>
+ 
 <% end %>
-
+<%= paginate(@ivents) %>
 
 
 
