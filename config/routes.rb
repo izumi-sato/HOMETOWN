@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   root 'ivents#index'
   get 'ivents/:id' => 'ivents#show'
     delete  'ivents/:id'  => 'ivents#destroy'
+    get   'ivents/:id/edit'  => 'ivents#edit'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
