@@ -1,18 +1,30 @@
-<div class="contents row">
-  <div class="content_post>
+  <div class="content_post">
+      <div class="itiran">
+      <h3>
+      イベント詳細
+    </h3>
+    </div>
     <% if user_signed_in? %>
-      <div class="more">
-        <span></span>
         <ul class="more_list">
           <li>
-            <%= link_to '編集', "/ivents/#{@ivent.id}/edit", method: :get %>
+            <%= link_to '編集', "/ivents/#{@ivent.id}/edit", class: 'post', method: :get %>
           </li>
           <li>
-            <%= link_to '削除', "/ivents/#{@ivent.id}", method: :delete %>
+            <%= link_to '削除', "/ivents/#{@ivent.id}", class: 'post', method: :delete %>
           </li>
         </ul>
       </div>
     <% end %>
+    <div class="ivent_shousai">
+      <div class="image_shousai" style="background-image:url(<%= @ivent.image %>)">
+      </div>
+    <div class="ivent-shousais">
+<p> タイトル：<%= @ivent.ivent_name %></p>
+<p> 日　時　：<%= @ivent.start_day %>~<%= @ivent.end_day %></p>
+<p> 場　所　：<%= @ivent.place %></p>
+<p> リンク先 :<%= @ivent.url %></p>
+<p> 主催者　：<%= @ivent.owner_name %></p>
     <%= simple_format(@ivent.text) %>
+    </div>
   </div>
 </div>

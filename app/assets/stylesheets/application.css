@@ -1,57 +1,3 @@
-.body {
-color: #dccb18;
-text-align: center;
-font-weight:bold;
-}
-
-.header {
-height:15vh;
-background-color: #dccb18;
-}
-.logo{
-font-size:1.8rem;
-font-weight:bold;
-color:#203744;
-line-height:15vh;
-  
-}
-.ivent-box{
-  width:90vw;
-  height:50vh;
-  display:flex;
-  color: #a69425;
-  border: #f2f2b0;
-  padding-left: 80px;
-  padding-bottom:10px;
-}
-.ivent-image{
-  width:20vw;
-  height:50vh;
-  border-color: #f2f2b0;
-  border:solid;
-  border-radius:7px;
-}
-.ivent-outline{
-  width:60vw;
-  height:50vh;
-  display:table-cell;
-  border-color: #f2f2b0;
-  border:solid;
-  border-radius:7px;
-  margin-left: 10px
-}
-.more{
-  text-align: center;
-}
-
-.ivents_new{
-  text-align: center;
-  color:#b4cf34;
-}
-.input_list{
-  border:solid;
-  border-color:#b4cf34; 
-}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -67,3 +13,136 @@ line-height:15vh;
  *= require_tree .
  *= require_self
  */
+
+.header {
+height:15vh;
+display:flex;
+color: #b4c928;
+}
+.logo{
+padding-left:10vw;
+}
+.user_button{
+  padding-left:50vw;
+  line-height:15vh;
+  font-weight: bold;
+  text-decoration: none;
+}
+.bar{
+  height:1vh;
+  background-color:#c3d825;
+}
+.itiran{
+ color:#c3d825; 
+ text-align: center;
+ padding:0;
+}
+.body {
+background-image:url('https://cdn.pixabay.com/photo/2016/09/21/04/46/barley-field-1684052_1280.jpg');
+background-size:cover;
+background-color: #f8f4e6;
+opacity: 0.7;
+padding-top:3vh 
+}
+.post{
+text-decoration: none; 
+color:#c3d825; 
+list-style: none;
+}
+
+.ivent-box{
+  width:60vw;
+  height:30vh;
+  display:flex;
+  color: #82ae46;
+  border-color: #e0ebaf;
+  margin: 0px auto; 
+}
+.ivent-image{
+  width:20vw;
+  height:25vh;
+  border-color: #e0ebaf;
+  border:solid;
+  border-width:1px;
+  border-radius:7px;
+  padding-top: 1vh;
+  background-color: #f8f4e6;
+   background-size:cover;
+}
+.ivent-outline{
+  width:60vw;
+  height:25vh;
+  display:table-cell;
+  border-color: #e0ebaf;
+  border:solid;
+  border-width:1px;
+  border-radius:7px;
+  margin-left: 1px;
+  background-color: #f8f4e6;
+  padding-top: 1vh;
+  
+}
+.box{
+  font-size:1.0rem;
+  display: flex;
+}
+.title{
+  font-size:1.0rem;
+  padding-left:1vw;
+  padding-top: 1vh;
+}
+.content{
+  font-size:1.3rem;
+  font-weight: bold;
+  padding-top: 1vh;
+}
+.more{
+  text-align: center;
+  list-style: none;
+}
+.more_list{
+  list-style: none;
+  text-decoration: none;
+  display:flex;
+  padding-left:80vw;
+}
+
+.input_list{
+  padding-left: 30vw;
+  color: #c3d825;
+}
+.ivent_shousai{
+  display:flex;
+  width:80vw;
+  height:60vh;
+  border:solid;
+  background-color: #f8f4e6;
+  border-color: #e0ebaf;
+  border-width:1px;
+  border-radius:7px;
+  padding-top: 1vh;
+  margin-left: 2px
+  text-decoration: none;
+  color: #82ae46;
+margin: 0px auto; 
+}
+
+.ivent_shousais{
+background-color: #f8f4e6;
+text-decoration: none;
+color: #c3d825;
+
+}
+.henshuu{
+color: #c3d825;
+}
+.image_shousai{
+  width:80vw;
+  background-size: cover;
+}
+
+.success{
+  text-align: center;
+  text-decoration: none;
+  color: #82ae46;
+}

@@ -1,8 +1,8 @@
 class IventsController < ApplicationController
-    before_action :move_to_index, except: :index
+  before_action :move_to_index, except: [:index, :show]
   
   def index
-    @ivents=Ivent.all
+    @ivents=Ivent.all.order("start_day DESC").page(params[:page]).per(5)
   end
   
   def new
@@ -12,6 +12,24 @@ class IventsController < ApplicationController
     Ivent.create(ivent_params)
   end
 
+  def show
+    @ivent = Ivent.find(params[:id])
+  end
+
+  def destroy
+    ivent = Ivent.find(params[:id])
+      ivent.destroy
+  end
+  
+  def edit
+    @ivent = Ivent.find(params[:id])
+  end
+  
+  def update
+    ivent = Ivent.find(params[:id])
+      ivent.update(ivent_params)
+  end
+  
   private
   def ivent_params
     params.permit(:ivent_name, :text, :owner_name, :start_day, :end_day,:place, :url, :image)

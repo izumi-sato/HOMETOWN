@@ -1,0 +1,22 @@
+<div class="henshuu">
+  <%= form_tag("/ivents/#{@ivent.id}", method: :patch ) do %>
+     <div class="itiran">
+      <h2>
+      イベント情報を編集する
+    </h2>
+    </div>
+    </h3>
+    <div class="input_list">
+    <ul><p>イベント名</p><input type="text" name="ivent_name" value="<%= @ivent.ivent_name %>" placeholder="イベント名"></ul>
+    <ul><p>主催者名</p><input type="text" name="owner_name" value="<%= @ivent.owner_name %>"placeholder="主催者名"></ul>
+    <ul><p>場所</p><input type="text" name="place" value="<%= @ivent.place %>"placeholder="開催地"></ul>
+    <ul><p>開催日（開始日）</p><input type="date" name="start_day" value="<%= @ivent.start_day %>"placeholder="開催日"></ul>
+    <ul><p>開催日（終了日）</p><input type="date" name="end_day" value="<%= @ivent.end_day %>"placeholder="開催日"></ul>
+    <ul><p>ポスター画像</p><input type="text" name="image" value="<%= @ivent.image %>"placeholder="ポスター画像"></ul>
+    <ul><p>URL</p><input thpe="text" name="url" value="<%= @ivent.url %>"placeholder="URL"></ul>
+    <ul><p>自由記載（３００文字以内）</p><textarea name="text" placeholder="text" rows="10" cols="50"><%= @ivent.text %></textarea></ul>
+    <input type="submit" value="SENT">
+    </div>
+
+  <% end %>
+</div>
